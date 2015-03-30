@@ -35,6 +35,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F31EF431AC969DA0023C206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DDF90E2158A1A0F00D44611;
+			remoteInfo = Base32Tool;
+		};
+		1F31EF451AC969DA0023C206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C996EC631A74F2180076B105;
+			remoteInfo = "iOS-Base32";
+		};
+		1F31EF471AC969DA0023C206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C996EC6D1A74F2190076B105;
+			remoteInfo = "iOS-Base32Tests";
+		};
+		1F31EF491AC969DA0023C206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C996EC9F1A7500D30076B105;
+			remoteInfo = "Mac-Base32";
+		};
+		1F31EF4B1AC969DA0023C206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C996ECA91A7500D30076B105;
+			remoteInfo = "Mac-Base32Tests";
+		};
 		C9003415196F6C83009733E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C97C822F1946E51D00FD9F4C /* Project object */;
@@ -66,6 +101,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Base32.xcodeproj; path = Carthage/Checkouts/Base32/Base32.xcodeproj; sourceTree = "<group>"; };
 		C9003417196F7046009733E8 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		C9290C2F1947D104008AE4DE /* TokenSerializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenSerializationTests.swift; sourceTree = "<group>"; };
 		C9307A8419A8515300609B02 /* TokenSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenSerializer.swift; sourceTree = "<group>"; };
@@ -149,6 +185,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F31EF3C1AC969D90023C206 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F31EF441AC969DA0023C206 /* Base32Tool.app */,
+				1F31EF461AC969DA0023C206 /* Base32.framework */,
+				1F31EF481AC969DA0023C206 /* Base32Tests.xctest */,
+				1F31EF4A1AC969DA0023C206 /* Base32.framework */,
+				1F31EF4C1AC969DA0023C206 /* Base32Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		746E7166AD60449882DD84C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +224,7 @@
 				746E7166AD60449882DD84C7 /* Frameworks */,
 				C996EC281A74D5830076B105 /* xcconfigs */,
 				C97C82391946E51D00FD9F4C /* Products */,
+				1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -477,6 +526,12 @@
 			mainGroup = C97C822E1946E51D00FD9F4C;
 			productRefGroup = C97C82391946E51D00FD9F4C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F31EF3C1AC969D90023C206 /* Products */;
+					ProjectRef = 1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C97C82371946E51D00FD9F4C /* OneTimePassword */,
@@ -486,6 +541,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1F31EF441AC969DA0023C206 /* Base32Tool.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Base32Tool.app;
+			remoteRef = 1F31EF431AC969DA0023C206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F31EF461AC969DA0023C206 /* Base32.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Base32.framework;
+			remoteRef = 1F31EF451AC969DA0023C206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F31EF481AC969DA0023C206 /* Base32Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Base32Tests.xctest;
+			remoteRef = 1F31EF471AC969DA0023C206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F31EF4A1AC969DA0023C206 /* Base32.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Base32.framework;
+			remoteRef = 1F31EF491AC969DA0023C206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F31EF4C1AC969DA0023C206 /* Base32Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Base32Tests.xctest;
+			remoteRef = 1F31EF4B1AC969DA0023C206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C97C82361946E51D00FD9F4C /* Resources */ = {
