@@ -11,7 +11,6 @@
 		C9290C301947D104008AE4DE /* TokenSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9290C2F1947D104008AE4DE /* TokenSerializationTests.swift */; };
 		C9307A8519A8515300609B02 /* TokenSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9307A8419A8515300609B02 /* TokenSerializer.swift */; };
 		C93A251A196B1BA400F86892 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A2519196B1BA400F86892 /* Token.swift */; };
-		C944A55F1A7EDAE200E08B1E /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C944A55E1A7EDAE200E08B1E /* Base32.framework */; };
 		C944A5951A809CC000E08B1E /* OTPTokenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C944A5941A809CC000E08B1E /* OTPTokenTests.m */; };
 		C94599CB19AB906300A77558 /* GeneratorFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94599CA19AB906300A77558 /* GeneratorFunctions.swift */; };
 		C94B2007197774A20014A202 /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94B2006197774A20014A202 /* TokenTests.swift */; };
@@ -69,6 +68,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = C996ECA91A7500D30076B105;
 			remoteInfo = "Mac-Base32Tests";
+		};
+		1F422A711AC9A5440023053C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F31EF3B1AC969D90023C206 /* Base32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C996EC621A74F2180076B105;
+			remoteInfo = "iOS-Base32";
 		};
 		C9003415196F6C83009733E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -155,7 +161,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C944A55F1A7EDAE200E08B1E /* Base32.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +434,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1F422A721AC9A5440023053C /* PBXTargetDependency */,
 			);
 			name = OneTimePassword;
 			productName = OneTimePassword;
@@ -663,6 +669,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F422A721AC9A5440023053C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iOS-Base32";
+			targetProxy = 1F422A711AC9A5440023053C /* PBXContainerItemProxy */;
+		};
 		C9003416196F6C83009733E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C97C82371946E51D00FD9F4C /* OneTimePassword */;
